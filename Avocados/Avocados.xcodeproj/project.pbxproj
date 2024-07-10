@@ -11,6 +11,13 @@
 		049EFFB12C3EF1E0009DB110 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049EFFB02C3EF1E0009DB110 /* ContentView.swift */; };
 		049EFFB32C3EF1E1009DB110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049EFFB22C3EF1E1009DB110 /* Assets.xcassets */; };
 		049EFFB62C3EF1E1009DB110 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049EFFB52C3EF1E1009DB110 /* Preview Assets.xcassets */; };
+		049EFFBE2C3EFA1B009DB110 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049EFFBD2C3EFA1B009DB110 /* Launch Screen.storyboard */; };
+		04C039C72C3F050700ABE262 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C039C52C3F050700ABE262 /* background.png */; };
+		04C039C82C3F050700ABE262 /* background-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C039C62C3F050700ABE262 /* background-dark.png */; };
+		04C039CA2C3F05EB00ABE262 /* AvocadosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C039C92C3F05EB00ABE262 /* AvocadosView.swift */; };
+		04C039CD2C3F05FF00ABE262 /* RipeningStagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C039CC2C3F05FF00ABE262 /* RipeningStagesView.swift */; };
+		04C039CF2C3F061F00ABE262 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C039CE2C3F061F00ABE262 /* SettingsView.swift */; };
+		04C039D12C3F062600ABE262 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C039D02C3F062600ABE262 /* AppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,14 @@
 		049EFFB02C3EF1E0009DB110 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		049EFFB22C3EF1E1009DB110 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		049EFFB52C3EF1E1009DB110 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		049EFFBC2C3EF8B6009DB110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		049EFFBD2C3EFA1B009DB110 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		04C039C52C3F050700ABE262 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		04C039C62C3F050700ABE262 /* background-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-dark.png"; sourceTree = "<group>"; };
+		04C039C92C3F05EB00ABE262 /* AvocadosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocadosView.swift; sourceTree = "<group>"; };
+		04C039CC2C3F05FF00ABE262 /* RipeningStagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningStagesView.swift; sourceTree = "<group>"; };
+		04C039CE2C3F061F00ABE262 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		04C039D02C3F062600ABE262 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +47,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04285DD02C3F036E0069A17B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04C039C62C3F050700ABE262 /* background-dark.png */,
+				04C039C52C3F050700ABE262 /* background.png */,
+				049EFFB22C3EF1E1009DB110 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04285DD22C3F03890069A17B /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				049EFFBD2C3EFA1B009DB110 /* Launch Screen.storyboard */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		04285DD42C3F03A60069A17B /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				049EFFB02C3EF1E0009DB110 /* ContentView.swift */,
+				04C039C92C3F05EB00ABE262 /* AvocadosView.swift */,
+				04C039CC2C3F05FF00ABE262 /* RipeningStagesView.swift */,
+				04C039CE2C3F061F00ABE262 /* SettingsView.swift */,
+				04C039D02C3F062600ABE262 /* AppView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		04285DD52C3F03AD0069A17B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				049EFFAE2C3EF1E0009DB110 /* AvocadosApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		04285DD62C3F03B50069A17B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04285DD72C3F03B90069A17B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04285DD82C3F03BE0069A17B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		049EFFA22C3EF1E0009DB110 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +125,14 @@
 		049EFFAD2C3EF1E0009DB110 /* Avocados */ = {
 			isa = PBXGroup;
 			children = (
-				049EFFAE2C3EF1E0009DB110 /* AvocadosApp.swift */,
-				049EFFB02C3EF1E0009DB110 /* ContentView.swift */,
-				049EFFB22C3EF1E1009DB110 /* Assets.xcassets */,
+				049EFFBC2C3EF8B6009DB110 /* Info.plist */,
+				04285DD52C3F03AD0069A17B /* Main */,
+				04285DD42C3F03A60069A17B /* Screen */,
+				04285DD62C3F03B50069A17B /* View */,
+				04285DD72C3F03B90069A17B /* Model */,
+				04285DD82C3F03BE0069A17B /* Data */,
+				04285DD22C3F03890069A17B /* SplashScreen */,
+				04285DD02C3F036E0069A17B /* Resources */,
 				049EFFB42C3EF1E1009DB110 /* Preview Content */,
 			);
 			path = Avocados;
@@ -125,7 +204,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049EFFBE2C3EFA1B009DB110 /* Launch Screen.storyboard in Resources */,
+				04C039C72C3F050700ABE262 /* background.png in Resources */,
 				049EFFB62C3EF1E1009DB110 /* Preview Assets.xcassets in Resources */,
+				04C039C82C3F050700ABE262 /* background-dark.png in Resources */,
 				049EFFB32C3EF1E1009DB110 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +219,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C039CF2C3F061F00ABE262 /* SettingsView.swift in Sources */,
 				049EFFB12C3EF1E0009DB110 /* ContentView.swift in Sources */,
+				04C039D12C3F062600ABE262 /* AppView.swift in Sources */,
+				04C039CD2C3F05FF00ABE262 /* RipeningStagesView.swift in Sources */,
 				049EFFAF2C3EF1E0009DB110 /* AvocadosApp.swift in Sources */,
+				04C039CA2C3F05EB00ABE262 /* AvocadosView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,17 +355,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Avocados/Preview Content\"";
 				DEVELOPMENT_TEAM = 668BA5HCMU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Avocados/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,17 +385,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Avocados/Preview Content\"";
 				DEVELOPMENT_TEAM = 668BA5HCMU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Avocados/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
