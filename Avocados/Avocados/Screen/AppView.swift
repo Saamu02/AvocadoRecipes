@@ -8,6 +8,18 @@
 import SwiftUI
 
 struct AppView: View {
+    
+    init() {
+        
+        if UITraitCollection.current.userInterfaceStyle == .light {
+            UITabBar.appearance().unselectedItemTintColor = .black.withAlphaComponent(0.5)
+            UITabBar.appearance().backgroundColor = .white.withAlphaComponent(0.1)
+            
+        } else {
+            UITabBar.appearance().backgroundColor = .black.withAlphaComponent(0.1)
+        }
+    }
+    
     var body: some View {
         
         TabView {
@@ -23,13 +35,13 @@ struct AppView: View {
                     Image("tabicon-book")
                     Text("Recipes")
                 }
-
+            
             RipeningStagesView()
                 .tabItem {
                     Image("tabicon-avocado")
                     Text("Avacado")
                 }
-
+            
             SettingsView()
                 .tabItem {
                     Image("tabicon-settings")
